@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="yoga.css">
+    <script src="yoga.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function getRandomColor() {
+          const letters = '0123456789ABCDEF';
+          let color = '#';
+          for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+        }
+        function changeBackgroundColor() {
+          document.body.style.backgroundColor = getRandomColor();
+        }
+        setInterval(changeBackgroundColor, 3000);
+      </script>
+
+
+    <center><h1>Employee form</h1><br>
+    <form>
+        <div class="end">
+        <label>Enter your name:</label>
+        <input type="text" id="name"><br><br>
+        <label>Enter your department:</label>
+        <input type="text" id="dept"><br><br>
+        <label>Tell us a little about yourself:</label>
+        <textarea></textarea><br><br>
+        <label>Do you exercise at home?</label>
+        <input type="radio" value="Yes">
+        <label style="color:whitesmoke">Yes</label>
+        <input type="radio" value="No">
+        <label style="color:whitesmoke">No</label><br><br>
+        <label>How do you like to read about your favorite topics?</label><br><br>
+        <input type="checkbox" value="Books">
+        <label style="color:whitesmoke">Books</label>
+        <input type="checkbox" value="Online resources">
+        <label style="color:whitesmoke">Online resources</label>
+        <input type="checkbox" value="Phone apps">
+        <label style="color:whitesmoke">Phone apps</label>
+        <input type="checkbox" value="Magazines">
+        <label style="color:whitesmoke">Magazines</label><br><br>
+        <label>What genre of movies do you like?</label>
+        <select>
+            <option>comedy</option>
+            <option>adventures</option>
+            <option>action</option>
+            <option>horror</option>
+            <option>fantasy</option>
+            <option>science fiction</option>
+        </select><br><br>
+        <input type="button" value="Submit form">
+        </div>
+        </form></center>
+    </body>
+</html>
